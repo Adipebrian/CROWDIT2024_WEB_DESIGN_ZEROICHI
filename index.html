@@ -1,114 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/img/icon.png" type="image/x-icon" />
     <title>Sehat Sigap</title>
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
     <!-- Header -->
-     <header >
-        <nav>
-            <a href="#" class="logo">
-                <img src="assets/img/logo.png" alt="">
-            </a>
-            <ul>
-                <li><a href="#">Berita</a></li>
-                <li><a href="#">Informasi</a></li>
-                <li><a href="#">Penelitian</a></li>
-            </ul>
-        </nav>
-        <!-- Banner -->
-         <section class="layout banner">
-            <div class="txt">
-                <div class="head">Bersatu Melawan Penyakit Infeksi Emerging</div>
-                <p>Penyakit infeksi emerging bisa menyerang kapan saja, tapi kita bisa mencegahnya.</p>
-                <a href="#" class="btn_action">Lihat Selengkapnya</a>
-            </div>
-            <div class="img">
-                <img src="assets/img/banner.png" alt="">
-            </div>
-         </section>
-     </header>
-
-     <section class="layout news">
-        <h1>Berita dan Informasi Terkini</h1>
-        <div class="boxWrapper">
-            <a href="#" class="box">
-                <img src="assets/img/news1.png" alt="">
-                <div class="txt">
-                    <h2>Begini Cara Mencuci Tangan Yang Benar</h2>
-                    <p>Salah satu perilaku hidup bersih dan sehat (PHBS) yang selalu digaungkan sejak lama untuk menjaga kesehatan dan kebersihan pribadi adalah mencuci tangan. Perilaku ini seharusnya menjadi kebiasaan yang sangat baik, karena selain untuk menjaga kesehatan dan.....</p>
-                </div>
-            </a>
-            <a href="#" class="box">
-                <img src="assets/img/news1.png" alt="">
-                <div class="txt">
-                    <h2>Begini Cara Mencuci Tangan Yang Benar</h2>
-                    <p>Salah satu perilaku hidup bersih dan sehat (PHBS) yang selalu digaungkan sejak lama untuk menjaga kesehatan dan kebersihan pribadi adalah mencuci tangan. Perilaku ini seharusnya menjadi kebiasaan yang sangat baik, karena selain untuk menjaga kesehatan dan.....</p>
-                </div>
-            </a>
-            <a href="#" class="box">
-                <img src="assets/img/news1.png" alt="">
-                <div class="txt">
-                    <h2>Begini Cara Mencuci Tangan Yang Benar</h2>
-                    <p>Salah satu perilaku hidup bersih dan sehat (PHBS) yang selalu digaungkan sejak lama untuk menjaga kesehatan dan kebersihan pribadi adalah mencuci tangan. Perilaku ini seharusnya menjadi kebiasaan yang sangat baik, karena selain untuk menjaga kesehatan dan.....</p>
-                </div>
-            </a>
+    <header>
+      <nav>
+        <a href="#" class="logo">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+        <ul>
+          <li><a href="#news">Berita</a></li>
+          <li><a href="#info">Informasi</a></li>
+          <li><a href="#teliti">Penelitian</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      </nav>
+      <!-- Banner -->
+      <section class="layout banner">
+        <div class="txt">
+          <div class="head">Bersatu Melawan Penyakit Infeksi Emerging</div>
+          <p>
+            Penyakit infeksi emerging bisa menyerang kapan saja, tapi kita bisa
+            mencegahnya.
+          </p>
+          <a href="#" class="btn_action">Lihat Selengkapnya</a>
         </div>
-     </section>
-
-     <!-- Info -->
-      <section class="layout info">
-        <h1>Informasi Daftar Penyakit</h1>
-        <div class="boxWrapper">
-            <a href="#" class="box">
-                <h3>Covid 19</h3>
-                <p>Disebabkan oleh virus SARS-CoV-2</p>
-            </a>
-            <a href="#" class="box">
-                <h3>Covid 19</h3>
-                <p>Disebabkan oleh virus SARS-CoV-2</p>
-            </a>
-            <a href="#" class="box">
-                <h3>Covid 19</h3>
-                <p>Disebabkan oleh virus SARS-CoV-2</p>
-            </a>
-            <a href="#" class="box">
-                <h3>Covid 19</h3>
-                <p>Disebabkan oleh virus SARS-CoV-2</p>
-            </a>
-            <a href="#" class="box">
-                <h3>Covid 19</h3>
-                <p>Disebabkan oleh virus SARS-CoV-2</p>
-            </a>
-            <a href="#" class="box">
-                <h3>Covid 19</h3>
-                <p>Disebabkan oleh virus SARS-CoV-2</p>
-            </a>
+        <div class="img">
+          <img src="assets/img/banner.png" alt="" />
         </div>
-        <a href="#" class="btn_action">Lihat Selengkapnya</a>
       </section>
+    </header>
 
-      <!-- penelitian -->
-       <section class="layout teliti">
-            <h1>Perkembangan Penelitian</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CxXF8k78GjY?si=rcgfF_0_tVXEI8Sv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       </section>
+    <section class="layout about">
 
-       <!-- footer -->
+        <div class="img" data-aos="fade-right">
+            <img src="assets/img/about.png" alt="" />
+          </div>
+      <div class="txt" data-aos="fade-left">
+        <h3>Tantangan Global: Memahami dan Mengatasi Infeksi Emerging
+        </h3>
+        <p>
+            Infeksi emerging merujuk pada penyakit yang baru muncul atau yang telah ada tetapi mulai menyebar secara lebih luas atau memiliki dampak yang lebih signifikan. Penyebab utama dari infeksi emerging bisa bermacam-macam, seperti mutasi virus atau bakteri, perubahan ekologi atau lingkungan, perjalanan internasional yang cepat, atau perubahan perilaku manusia.
+<br>
+<br>
+            Beberapa contoh infeksi emerging yang terkenal termasuk virus HIV/AIDS pada tahun 1980-an, SARS (Severe Acute Respiratory Syndrome) pada tahun 2003, MERS (Middle East Respiratory Syndrome) pada tahun 2012, dan yang paling baru, pandemi COVID-19 yang dimulai pada tahun 2019. Infeksi emerging sering kali menuntut respons cepat dari komunitas ilmiah, pemerintah, dan masyarakat global untuk mengendalikan penyebarannya dan mengurangi dampak kesehatan publik.
+        </p>
+      </div>
+      
+    </section>
 
-        <footer>
-            <a href="#" class="logo">
-                <img src="assets/img/logo.png" alt="">
-            </a>
-            <ul>
-                <li><a href="#">Berita</a></li>
-                <li><a href="#">Informasi</a></li>
-                <li><a href="#">Penelitian</a></li>
-            </ul>
-        </footer>
-</body>
+    <section class="layout news" id="news">
+      <h1 data-aos="fade-down">Berita dan Informasi Terkini</h1>
+      <div class="boxWrapper">
+        <a
+          href="https://infeksiemerging.kemkes.go.id/info-corona-virus/begini-cara-mencuci-tangan-yang-benar"
+          class="box"
+          data-aos="fade-right"
+        >
+          <img src="assets/img/news1.png" alt="" />
+          <div class="txt">
+            <h2>Begini Cara Mencuci Tangan Yang Benar</h2>
+            <p>
+              Salah satu perilaku hidup bersih dan sehat (PHBS) yang selalu
+              digaungkan sejak lama untuk menjaga kesehatan dan kebersihan
+              pribadi adalah mencuci tangan. Perilaku ini seharusnya menjadi
+              kebiasaan yang sangat baik, karena selain untuk menjaga kesehatan
+              dan.....
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://dinkes.jogjaprov.go.id/berita/detail/tantangan-yang-makin-serius-penyakit-penyakit-infeksi-new-emerging-di-indonesia"
+          class="box"
+          data-aos="fade-up"
+        >
+          <img src="assets/img/news2.jpg" alt="" />
+          <div class="txt">
+            <h2>
+              Tantangan Yang Makin Serius Penyakit-Penyakit Infeksi New Emerging
+              di Indonesia
+            </h2>
+            <p>
+              Penyakit infeksi telah menjadi ancaman yang telah lama berlangsung
+              dan konstan dalam perjalanan manusia. Namun sesuatu telah mengubah
+              sifat konstan tersebut. Perkembangan globalisasi, urbanisasi dan
+              perubahan lingkungan.....
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://kesehatan.jogjakota.go.id/berita/id/267/waspada-penyakit-infeksi-emerging-dan-re-emerging/"
+          class="box"
+          data-aos="fade-left"
+        >
+          <img src="assets/img/news3.jpeg" alt="" />
+          <div class="txt">
+            <h2>Waspada Penyakit Infeksi Emerging dan Re-emerging</h2>
+            <p>
+              Balaikota. Bertempat di Ruang Arjuna Dinas Perijinan, dilaksanakan
+              update knowledge pengetahuan dalam tajuk ‘Pembinaan pelacakan
+              kontak kasus Covid-19 bagi Puskesmas zona barat ‘. Sebanyak 42
+              orang petugas surveilans.......
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section class="layout info" id="info">
+      <h1 data-aos="fade-down">Informasi Daftar Penyakit</h1>
+      <div class="boxWrapper">
+        <a href="#" class="box" data-aos="fade-up">
+          <h3>Covid 19</h3>
+          <p>Disebabkan oleh virus SARS-CoV-2</p>
+        </a>
+        <a href="#" class="box" data-aos="fade-up">
+          <h3>MPOX</h3>
+          <p>Mirip cacar yang disebabkan oleh virus</p>
+        </a>
+        <a href="#" class="box" data-aos="fade-up">
+          <h3>DEMAM KUNING</h3>
+          <p>Penyakit menular yang ditularkan oleh nyamuk</p>
+        </a>
+        <a href="#" class="box" data-aos="fade-up">
+          <h3>DEMAM LASSA</h3>
+          <p>Penyakit hemoragik virus akut</p>
+        </a>
+        <a href="#" class="box" data-aos="fade-up">
+          <h3>MERS</h3>
+          <p>Virus yang ditularkan ke manusia dari unta</p>
+        </a>
+        <a href="#" class="box" data-aos="fade-up">
+          <h3>VIRUS HANTA</h3>
+          <p>Ditularkan melalui kontak dengan hewan pengerat</p>
+        </a>
+      </div>
+      <a href="#" class="btn_action" data-aos="fade-up">Lihat Selengkapnya</a>
+    </section>
+
+    <!-- penelitian -->
+    <section class="layout teliti" id="teliti">
+      <h1 data-aos="fade-up">Perkembangan Penelitian</h1>
+      <iframe
+        data-aos="fade-up"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/CxXF8k78GjY?si=rcgfF_0_tVXEI8Sv"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="layout">
+      <a href="#" class="logo">
+        <img src="assets/img/logo.png" alt="" />
+      </a>
+      <ul>
+        <li><a href="#">Berita</a></li>
+        <li><a href="#">Informasi</a></li>
+        <li><a href="#">Penelitian</a></li>
+      </ul>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

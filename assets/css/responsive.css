@@ -1,0 +1,132 @@
+/* Responsive Breakpiont */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav .logo img {
+        width: 50px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        z-index: 9999;
+        height: 250px;
+        width: 100vw;
+        padding-right: 0;
+        background-color: #134B70;
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 4px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        z-index: 99999;
+        margin-right: 50px;
+    }
+    nav .logo{
+        width: 50%;
+    }
+    nav .logo img{
+        width:70%;
+      }
+
+      .banner {
+        flex-direction: column;
+      }
+      .banner .txt {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      .banner .img {
+        width: 100%;
+      }
+      .banner .head {
+        font-size: 40px;
+      }
+      .banner p {
+        font-size: 14px;
+      }
+      .about{
+        flex-direction: column;
+      }
+      .about .img{
+        width: 100%;
+    }
+    .about .txt{
+        width: 100%;
+    }
+    .news{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .news .boxWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .news .boxWrapper .box {
+        width: 300px;
+    }
+    .news .boxWrapper .box img {
+        width: 300px;
+    }
+    .news .boxWrapper .box p {
+        font-size: 13px;
+    }
+    .news .boxWrapper .box h2 {
+        font-size: 17px;
+    }
+    .info .boxWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .info .boxWrapper .box {
+        width: 300px;
+    }
+    .teliti {
+        padding-top: 100px;
+        padding-bottom:100px;
+        text-align: center;
+    }
+    .teliti iframe {
+        width: 80vw;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .logo{
+        margin-bottom: 20px;
+    }
+}

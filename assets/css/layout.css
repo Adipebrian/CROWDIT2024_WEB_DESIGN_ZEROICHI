@@ -48,3 +48,81 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 }
+
+footer{
+    display: flex;
+    background-color: #134B70;
+    color: #fff;
+    justify-content: space-between;
+}
+footer .logo img{
+    width: 60%;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+  }
+  
+  .menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.5s;
+    z-index: 99;
+  }
+  
+  /* hamburger menu animation */
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+  
+  .menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  
+  .menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+  .menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+  }
+  

@@ -147,3 +147,25 @@
 .teliti iframe {
   border-radius: 20px;
 }
+
+
+/* about */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.about .img{
+  width: 50%;
+}
+.about .img img{
+  width: 100%;
+}
+.about .txt{
+    width: 50%;
+}
+.about .txt p{
+    margin-top: 10px;
+    text-align: justify;
+}
